@@ -28,7 +28,13 @@ When you add a secret at the organization level, you can specify which repositor
 After you add a {% data variables.product.prodname_dependabot %} secret, you can reference it in the _dependabot.yml_ configuration file like this: {% raw %}`${{secrets.NAME}}`{% endraw %}, where "NAME" is the name you chose for the secret. For example: 
 
 {% raw %}
-```yaml
+```yamlecho "# Jody-" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Joomla1334/Jody-.git
+git push -u origin main
 password: ${{secrets.MY_ARTIFACTORY_PASSWORD}}
 ```
 {% endraw %}
